@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-
 body {
   background-color: #f3d4c0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   color: #2d1c14;
@@ -44,7 +42,7 @@ label {
 input {
   margin-top: 5px;
   padding: 10px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   border: 1px solid #2d1c14;
   background-color: #fffaf5;
@@ -57,7 +55,7 @@ button {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   margin-top: 20px;
 }
 
@@ -68,6 +66,38 @@ button {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
+}
+
+.result-card {
+  background-color: #fffaf5;
+  border: 1px solid #d6b89f;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.insight {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #4a3a2c;
+  font-style: italic;
+}
+
+.progress-container {
+  background-color: #e6d5c3;
+  border-radius: 4px;
+  height: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #ccc;
+  transition: width 0.4s ease, background-color 0.4s ease;
 }
 
 .hidden {
