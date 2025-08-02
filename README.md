@@ -1,7 +1,5 @@
 # Event-ROI-Forecast-Tool
 
-# Event ROI Forecast Tool
-
 A simple JavaScript-based web app to help marketers estimate the return on investment (ROI) for in-person or virtual events. Designed with an elegant layout inspired by Stefanie Brückler’s minimalist portfolio style.
 
 ## 🔍 Features
