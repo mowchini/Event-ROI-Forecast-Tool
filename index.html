@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Event ROI Forecaster</title>
+  <title>Event ROI Forecast Tool</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Event ROI Forecast Tool</h1>
-      <p>Estimate the return on investment for your upcoming event.</p>
+      <h1>Event ROI Forecast</h1>
+      <p>Quickly predict the return on your event investment based on attendance, lead capture, and deal size.</p>
     </header>
 
     <form id="roiForm">
@@ -22,7 +23,7 @@
         <input type="number" id="attendees" required />
       </label>
 
-      <label>Lead Capture Rate (%) 
+      <label>Lead Capture Rate (%)
         <input type="number" id="leadRate" required />
       </label>
 
@@ -34,19 +35,21 @@
         <input type="number" id="dealSize" required />
       </label>
 
-      <button type="submit">Calculate ROI</button>
+      <button type="submit">Generate Forecast</button>
     </form>
 
     <div id="results" class="results hidden">
-      <h2>Results</h2>
-      <p><strong>Leads Captured:</strong> <span id="leadsOut"></span></p>
-      <p><strong>Deals Closed:</strong> <span id="dealsOut"></span></p>
-      <p><strong>Projected Revenue:</strong> $<span id="revenueOut"></span></p>
-      <p><strong>ROI:</strong> <span id="roiOut"></span></p>
-      <p><strong>Break-Even Deals Needed:</strong> <span id="breakEvenOut"></span></p>
+      <h2>Forecast Summary</h2>
+      <div class="result-card">
+        <p><strong>📥 Leads Captured:</strong> <span id="leadsOut"></span></p>
+        <p><strong>🤝 Deals Closed:</strong> <span id="dealsOut"></span></p>
+        <p><strong>💰 Projected Revenue:</strong> $<span id="revenueOut"></span></p>
+        <p><strong>📈 ROI:</strong> <span id="roiOut"></span></p>
+        <p><strong>⚖️ Break-Even Deals Needed:</strong> <span id="breakEvenOut"></span></p>
+      </div>
+      <p class="insight">Use these estimates to prioritize your outreach and optimize your event strategy.</p>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
