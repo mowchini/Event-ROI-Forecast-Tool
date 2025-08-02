@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event ROI Forecaster</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Event ROI Forecast Tool</h1>
+      <p>Estimate the return on investment for your upcoming event.</p>
+    </header>
+
+    <form id="roiForm">
+      <label>Total Event Cost ($)
+        <input type="number" id="cost" required />
+      </label>
+
+      <label>Expected Attendees
+        <input type="number" id="attendees" required />
+      </label>
+
+      <label>Lead Capture Rate (%) 
+        <input type="number" id="leadRate" required />
+      </label>
+
+      <label>Close Rate (%)
+        <input type="number" id="closeRate" required />
+      </label>
+
+      <label>Average Deal Size ($)
+        <input type="number" id="dealSize" required />
+      </label>
+
+      <button type="submit">Calculate ROI</button>
+    </form>
+
+    <div id="results" class="results hidden">
+      <h2>Results</h2>
+      <p><strong>Leads Captured:</strong> <span id="leadsOut"></span></p>
+      <p><strong>Deals Closed:</strong> <span id="dealsOut"></span></p>
+      <p><strong>Projected Revenue:</strong> $<span id="revenueOut"></span></p>
+      <p><strong>ROI:</strong> <span id="roiOut"></span></p>
+      <p><strong>Break-Even Deals Needed:</strong> <span id="breakEvenOut"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
